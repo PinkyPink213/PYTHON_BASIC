@@ -1,68 +1,48 @@
 """บทที่ 7: Type Conversion / Casting — เปลี่ยนชนิดข้อมูล"""
 
-# Casting คือการใช้ฟังก์ชันสร้างข้อมูลเป็นชนิดที่ต้องการ
-# int()   -> จำนวนเต็ม
-# float() -> จำนวนทศนิยม
-# str()   -> ข้อความ
-# bool()  -> Boolean
+# input() ให้ผลเป็น String เสมอ
+# ถ้าต้องการคำนวณ ต้องแปลงเป็นตัวเลขก่อน
+# int()   แปลงเป็นจำนวนเต็ม
+# float() แปลงเป็นจำนวนทศนิยม
+# str()   แปลงเป็นข้อความ
 
-print("--- Example 1: str to int ---")
+
+print("--- Example 1: String to int ---")
 age_text = "10"
-age_number = int(age_text)
-print(age_number + 1)
+age = int(age_text)
+print(age + 1)
 
 
-print("\n--- Example 2: str to float ---")
+print("\n--- Example 2: String to float ---")
 price_text = "25.5"
-price_number = float(price_text)
-print(price_number + 10)
+price = float(price_text)
+print(price + 10)
 
 
-print("\n--- Example 3: number to str ---")
+print("\n--- Example 3: Number to String ---")
 score = 50
 print("Your score is " + str(score) + ".")
 
 
-print("\n--- Example 4: input with int ---")
-number = int(input("Choose a whole number: "))
-print(number + 5)
-
-
-print("\n--- Example 5: Cast to bool ---")
-print(bool(1))    # True
-print(bool(0))    # False
-print(bool("Hi")) # True เพราะ String ไม่ว่าง
-print(bool(""))   # False เพราะเป็น String ว่าง
-
-
-print("\n--- Typing Practice: Fix a calculation ---")
-# พิมพ์ตามเพื่อฝึก Casting จาก input เป็น int และจาก int เป็น str
+print("\n--- Typing Practice: พิมพ์ตาม ---")
+# พิมพ์ตาม แล้วลองตอบด้วยเลขจำนวนเต็ม
 # candies = int(input("How many candies do you have? "))
 # total_candies = candies + 2
 # print("Now you have " + str(total_candies) + " candies.")
 
 
 print("\n--- Your turn 1 ---")
-coins_text = "20"
-# TODO 1: ใช้ int() เปลี่ยน coins_text แล้วบวกอีก 5
+# TODO 1: ถามอายุด้วย int(input())
+# คำนวณอายุในปีถัดไป แล้วแสดงผลด้วย str()
 
 
 print("\n--- Your turn 2 ---")
-temperature = 32.5
-# TODO 2: ใช้ str() ต่อ temperature กับข้อความ "Temperature: "
-
-
-print("\n--- Your turn 3 ---")
-# TODO 3: ถามอายุด้วย int(input()) แล้วแสดงอายุในปีถัดไป
-
-
-print("\n--- Your turn 4 ---")
-# TODO 4: ใช้ bool() แปลงค่า 1, 0, "Python" และ ""
-# ทายผลก่อน แล้ว print() เพื่อตรวจคำตอบ
+# TODO 2: ถามส่วนสูงด้วย float(input())
+# เพิ่มส่วนสูงอีก 5.5 แล้ว print ผลลัพธ์
 
 
 # === คำถามเช็กความเข้าใจ ===
-# 1. เพราะอะไรจึงคำนวณ "10" + 1 ไม่ได้?
-# 2. int(), float(), str() และ bool() ทำหน้าที่อะไร?
-# 3. int(input()) ต่างจาก input() อย่างไร?
-# 4. ค่าใดบ้างที่ bool() เปลี่ยนเป็น False ในตัวอย่างนี้?
+# 1. input() ให้ข้อมูลชนิดใด?
+# 2. int() และ float() ต่างกันอย่างไร?
+# 3. เพราะอะไรจึงใช้ str() เมื่อต่อเลขกับข้อความด้วย +?
+

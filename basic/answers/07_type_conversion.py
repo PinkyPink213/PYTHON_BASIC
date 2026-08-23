@@ -1,18 +1,13 @@
 """เฉลยบทที่ 7: Type Conversion / Casting"""
 
-# Casting คือการเปลี่ยนข้อมูลให้เป็นชนิดที่เราต้องการ
-
-coins_text = "20"
-coins = int(coins_text)
-print(coins + 5)
-
-temperature = 32.5
-print("Temperature: " + str(temperature))
-
+print("--- Your turn 1: Answer ---")
 age = int(input("How old are you? "))
-print("Next year, you will be " + str(age + 1) + ".")
+next_age = age + 1
+print("Next year, you will be " + str(next_age) + ".")
 
-print(bool(1))
-print(bool(0))
-print(bool("Python"))
-print(bool(""))
+
+print("\n--- Your turn 2: Answer ---")
+height = float(input("How tall are you? "))
+new_height = height + 5.5
+print(new_height)
+
