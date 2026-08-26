@@ -9,31 +9,45 @@ print("I am learning to code.")
 
 print("\n--- Example 2: Print numbers ---")
 print(10)
-print(5 + 3)
 
 # สังเกต:
 # ข้อความต้องมี Quote แต่ตัวเลขไม่ต้องมี Quote
 
 
-print("\n--- Typing Practice: พิมพ์ตาม ---")
-# พิมพ์ตามด้วยตัวเอง แล้วกด Run
-# print("My name is Mali.")
-# print("I like Python!")
-# print(20)
-# print(10 + 5)
+print("\n--- Example 3: Print multiple values ---")
+# ใช้เครื่องหมาย , คั่นค่าที่ต้องการแสดงในบรรทัดเดียวกัน
+print("Score:", 10)
+
+
+print("\n--- Practice 1: Print text ---")
+# เขียนโค้ดให้แสดงข้อความนี้
+#
+# My name is Mali.
+
+
+print("\n--- Practice 2: Print a number ---")
+# เขียนโค้ดให้แสดงตัวเลขนี้ โดยไม่ใช้ Quote
+#
+# 20
+
+
+print("\n--- Practice 3: Print multiple values ---")
+# ใช้ print() และเครื่องหมาย , เพื่อแสดงข้อความกับตัวเลขในบรรทัดเดียว
+# ผลลัพธ์ที่ต้องการ:
+#
+# Stars: 5
 
 
 print("\n--- Your turn 1 ---")
 # TODO 1: ใช้ print() แสดงชื่อและอาหารที่ชอบ คนละหนึ่งบรรทัด
+# เขียน Comment เหนือโค้ดเพื่ออธิบายสิ่งที่โปรแกรมจะแสดง
 
 
 print("\n--- Your turn 2 ---")
-# TODO 2: ใช้ print() แสดงเลข 100
-# จากนั้นใช้ print() แสดงผลลัพธ์ของ 20 + 5
+# TODO 2: ใช้ print() และเครื่องหมาย , แสดงคำว่า Level: กับเลข 3
 
 
 # === คำถามเช็กความเข้าใจ ===
 # 1. print() ใช้ทำอะไร?
 # 2. ข้อความและตัวเลขเขียนต่างกันอย่างไร?
-# 3. print(5 + 3) แสดง 5 + 3 หรือแสดงผลลัพธ์ของการบวก?
-
+# 3. ถ้าต้องการแสดงข้อความกับตัวเลขในบรรทัดเดียวกัน ใช้อะไรคั่นได้?

@@ -1,49 +1,29 @@
-# Python Sets สำหรับเด็ก
+# Chapter 06 — Python Sets
 
-Set ใช้เก็บข้อมูลหลายค่าที่ไม่ซ้ำกัน และไม่มีลำดับตำแหน่งแน่นอน
+Set เก็บค่าที่ไม่ซ้ำ ไม่มี Index และลำดับที่แสดงอาจเปลี่ยนได้
 
-```python
-animals = {"cat", "dog", "rabbit"}
-```
+## ลำดับไฟล์
 
-## คุณสมบัติสำคัญ
+| ไฟล์ | สิ่งที่เรียน |
+|---|---|
+| `01_python_sets.py` | สร้าง Set, ค่าซ้ำ และ Set ว่างด้วย `set()` |
+| `02_access_set_items.py` | ตรวจด้วย `in`/`not in` และอ่านด้วย `for` |
+| `03_add_and_remove_items.py` | `add()`, `update()`, `remove()`, `discard()`, `pop()`, `clear()` |
+| `04_loop_sets.py` | ใช้ Set กับ `for` และ Conditions |
+| `05_join_sets.py` | Union, Intersection, Difference และ Symmetric Difference |
+| `06_frozenset.py` | Set ที่เพิ่มหรือลบสมาชิกไม่ได้ |
+| `07_set_methods_exercises.py` | แบบฝึกรวม Set Methods |
+| `08_1_rescue_team_game.py` | เล่นเกมจัดทีมกู้ภัยโดยใช้ Set |
+| `08_2_create_your_set_game.py` | สร้างเกม Set ของตัวเอง |
 
-- สมาชิกไม่ซ้ำกัน
-- ไม่มี Index
-- ลำดับที่แสดงอาจเปลี่ยนได้
-- เพิ่มและลบสมาชิกได้
-- ตรวจสมาชิกด้วย `in` และ `not in`
+## สิ่งที่ต้องจำ
 
-## คำสั่งสำคัญ
+- Set ว่างใช้ `set()` เพราะ `{}` คือ Dictionary ว่าง
+- `remove()` เกิด Error เมื่อไม่มีค่า แต่ `discard()` ไม่เกิด Error
+- `pop()` ลบสมาชิกที่คาดตำแหน่งล่วงหน้าไม่ได้
+- `frozenset` เหมาะกับชุดข้อมูลที่ไม่ควรถูกเปลี่ยน
 
-```python
-items = {"key", "map"}
+## ผลลัพธ์ท้ายบท
 
-items.add("torch")
-items.update({"water", "food"})
-items.remove("map")
-items.discard("rope")
-
-print("key" in items)
-```
-
-## การรวมและเปรียบเทียบ Set
-
-```python
-a = {1, 2, 3}
-b = {3, 4, 5}
-
-print(a | b)  # union
-print(a & b)  # intersection
-print(a - b)  # difference
-print(a ^ b)  # symmetric difference
-```
-
-## สิ่งที่ควรจำ
-
-- Set ว่างต้องใช้ `set()` ไม่ใช่ `{}`
-- `{}` คือ Dictionary ว่าง
-- `remove()` เกิด Error ถ้าไม่มีค่านั้น
-- `discard()` ไม่เกิด Error เมื่อไม่มีค่านั้น
-- `frozenset` คือ Set ที่เพิ่มหรือลบสมาชิกไม่ได้
+เด็กใช้ Set กำจัดข้อมูลซ้ำ ตรวจสมาชิก และเปรียบเทียบกลุ่มข้อมูลเพื่อสร้างระบบทีมในเกมได้
 

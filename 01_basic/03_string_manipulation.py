@@ -25,12 +25,24 @@ age = 11
 print(f"My name is {name}. I am {age} years old.")
 
 
-print("\n--- Typing Practice: Make a hero sentence ---")
-# พิมพ์ตามเพื่อฝึกต่อ String และใช้ f-string
-# hero_name = "Luna"
-# hero_power = "flying"
-# print(hero_name + " can use " + hero_power + ".")
-# print(f"Hero: {hero_name} | Power: {hero_power}")
+print("\n--- Practice 1: Join strings ---")
+# กำหนด hero_name เป็นชื่อฮีโร่ที่เด็กเลือกเอง
+# กำหนด hero_power เป็นพลังที่เด็กเลือกเอง
+# ใช้ + สร้างประโยคว่า ฮีโร่ใช้พลังอะไร
+
+
+print("\n--- Practice 2: Repeat text ---")
+# สร้างข้อความเชียร์สั้น ๆ แล้วใช้ * แสดงซ้ำ 3 ครั้ง
+
+
+print("\n--- Practice 3: String methods ---")
+# สร้างข้อความที่มีช่องว่างด้านหน้าและด้านหลัง
+# ทดลองแสดงผลด้วย lower(), upper() และ strip() ทีละแบบ
+
+
+print("\n--- Practice 4: f-string ---")
+# ใช้ตัวแปร hero_name และ hero_power จาก Practice 1
+# สร้าง Hero Card หนึ่งบรรทัดด้วย f-string
 
 
 print("\n--- Your turn 1 ---")

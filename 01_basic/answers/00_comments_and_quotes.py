@@ -8,10 +8,14 @@ print("My hobby is drawing.")
 
 print("\n--- Your turn 2: Answer ---")
 print("I'm a Python student.")
-print('The robot says, "Let\'s play!"')
+print('The robot says, "Run!"')
 
 
 print("\n--- Your turn 3: Answer ---")
+print('The cat\'s name is Luna.')
+
+
+print("\n--- Your turn 4: Answer ---")
 story = """A rabbit found a map.
 The map showed a secret cave.
 A new adventure began!"""

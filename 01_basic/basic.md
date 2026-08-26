@@ -1,40 +1,31 @@
-# Python Basics สำหรับเด็ก
+# Chapter 01 — Python Basic
 
-บทนี้เป็นพื้นฐานก่อนเรียน `if-elif-else`, List และ Loop
+พื้นฐานที่เด็กต้องใช้ก่อนเริ่มเขียนเกม โดยบทนี้ยังไม่สอน `if-elif-else`
 
-## ลำดับการเรียน
+## ลำดับไฟล์
 
-1. Comments and Quotes — เขียนคำอธิบายและข้อความ
-2. `print()` — แสดงข้อความ
-3. Variables — กล่องเก็บข้อมูล
-4. Strings — ข้อความและการต่อข้อความ
-5. `input()` — รับคำตอบจากผู้ใช้
-6. Variable Naming Rules — ตั้งชื่อตัวแปรให้ถูกต้อง
-7. Data Types — ชนิดของข้อมูล
-8. Type Conversion / Casting — เปลี่ยนชนิดข้อมูล
-9. Mathematical Operations — คำนวณตัวเลข
-10. Mini Project — สร้างเครื่องแนะนำตัวและคำนวณอายุ
+| ไฟล์ | สิ่งที่เรียน |
+|---|---|
+| `00_comments_and_quotes.py` | Comment ทั้งบรรทัด/ท้ายบรรทัด, `'...'`, `"..."`, `\'`, `\"`, `\n` และ Triple Quotes |
+| `01_print_function.py` | แสดงข้อความ ตัวเลข และหลายค่าด้วย `print()` |
+| `02_variables.py` | สร้าง เปลี่ยน และคัดลอกค่าของตัวแปร |
+| `03_string_manipulation.py` | ต่อและทำซ้ำ String, `lower()`, `upper()`, `strip()` และ f-string |
+| `04_input_function.py` | ถามและเก็บคำตอบด้วย `input()` |
+| `05_variable_naming_rules.py` | กฎการตั้งชื่อและ `snake_case` |
+| `06_data_types.py` | `str`, `int`, `float`, `bool` และ `type()` |
+| `07_type_conversion.py` | Casting ด้วย `int()`, `float()` และ `str()` |
+| `08_mathematical_operations.py` | Operators, ลำดับการคำนวณ, `+=` และ `-=` |
+| `09_1_profile_generator.py` | เล่นและศึกษา Adventure Profile Generator |
+| `09_2_create_your_profile.py` | สร้าง Profile Generator ด้วยไอเดียของตัวเอง |
 
-## คำสั่งสำคัญ
+## วิธีเรียน
 
-```python
-name = "Mali"
-age = 10
+1. ครูอธิบาย Example และให้เด็กทายผลก่อน Run
+2. เด็กอ่านผลลัพธ์หรือเงื่อนไขใน Practice แล้วคิดโค้ดเอง
+3. เด็กทำ Your Turn โดยยังไม่เปิด `answers`
+4. Run ตรวจทีละเคส แล้วค่อยเปรียบเทียบเฉลย
+5. ปิดท้ายด้วย Mini Project ที่รวมความรู้ทั้งบท
 
-print("Hello, " + name)
-answer = input("What is your name? ")
-number = int(input("Choose a number: "))
-print(type(number))
-```
+## ผลลัพธ์ท้ายบท
 
-## สิ่งที่ควรจำ
-
-- ข้อความต้องอยู่ในเครื่องหมายคำพูด
-- ใช้ `#` เขียนคอมเมนต์สำหรับอธิบายโค้ด
-- ข้อความใช้ได้ทั้ง single quote `'...'` และ double quote `"..."`
-- `=` ใช้เก็บค่าลงในตัวแปร
-- `input()` ให้ผลเป็น `string` เสมอ
-- แปลงข้อความเป็นจำนวนด้วย `int()` หรือ `float()` ก่อนคำนวณ
-- การใช้ `int()`, `float()`, `str()` และ `bool()` เปลี่ยนชนิดข้อมูลเรียกว่า Casting
-- ชื่อตัวแปรห้ามมีช่องว่างและห้ามขึ้นต้นด้วยตัวเลข
-- Python แยกตัวพิมพ์เล็กและตัวพิมพ์ใหญ่
+เด็กสามารถรับและเก็บข้อมูล จัดข้อความ แปลงชนิดข้อมูล คำนวณ และแสดง Profile ที่ออกแบบเองได้

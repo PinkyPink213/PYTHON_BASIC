@@ -24,11 +24,18 @@ score = 50
 print("Your score is " + str(score) + ".")
 
 
-print("\n--- Typing Practice: พิมพ์ตาม ---")
-# พิมพ์ตาม แล้วลองตอบด้วยเลขจำนวนเต็ม
-# candies = int(input("How many candies do you have? "))
-# total_candies = candies + 2
-# print("Now you have " + str(total_candies) + " candies.")
+print("\n--- Practice 1: Convert to int ---")
+# ถามจำนวนลูกอมจากผู้ใช้ แล้วแปลงคำตอบเป็น int
+# เพิ่มลูกอมอีก 2 เม็ด และแสดงจำนวนใหม่
+
+
+print("\n--- Practice 2: Convert to float ---")
+# กำหนดข้อความ "19.5" แล้วแปลงเป็น float
+# เพิ่มค่าอีก 0.5 และแสดงผลลัพธ์
+
+
+print("\n--- Practice 3: Convert to str ---")
+# กำหนดคะแนนเป็นตัวเลข แล้วใช้ str() เพื่อนำคะแนนไปต่อกับข้อความ
 
 
 print("\n--- Your turn 1 ---")
@@ -45,4 +52,3 @@ print("\n--- Your turn 2 ---")
 # 1. input() ให้ข้อมูลชนิดใด?
 # 2. int() และ float() ต่างกันอย่างไร?
 # 3. เพราะอะไรจึงใช้ str() เมื่อต่อเลขกับข้อความด้วย +?
-

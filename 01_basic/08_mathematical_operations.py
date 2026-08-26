@@ -22,14 +22,19 @@ score -= 2
 print(score)
 
 
-print("\n--- Typing Practice: Mini calculator ---")
-# พิมพ์ตาม แล้วทายคำตอบก่อนกด Run
-# number_1 = 12
-# number_2 = 4
-# print(number_1 + number_2)
-# print(number_1 - number_2)
-# print(number_1 * number_2)
-# print(number_1 / number_2)
+print("\n--- Practice 1: Basic calculator ---")
+# เลือกตัวเลขสองจำนวนและเก็บไว้ในตัวแปร
+# ทายคำตอบก่อน แล้วแสดงผลบวก ลบ คูณ และหารทีละบรรทัด
+
+
+print("\n--- Practice 2: Order of operations ---")
+# ทายผลลัพธ์ของ 2 + 3 * 4
+# จากนั้นเพิ่มวงเล็บเพื่อให้การบวกเกิดก่อน และเปรียบเทียบคำตอบ
+
+
+print("\n--- Practice 3: Update a score ---")
+# เริ่มคะแนนที่ 10 ใช้ += เพื่อเพิ่ม 5 และใช้ -= เพื่อลด 2
+# แสดงคะแนนสุดท้าย
 
 
 print("\n--- Your turn 1: Candy calculator ---")

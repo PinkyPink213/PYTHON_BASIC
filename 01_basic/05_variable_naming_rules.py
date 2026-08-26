@@ -30,11 +30,12 @@ print(Age)
 
 
 print("\n--- Typing Practice: Fix the names ---")
-# พิมพ์เฉพาะชื่อที่แก้ถูกแล้วทางด้านขวา
-# player name -> player_name = "Mali"
-# 2nd_level   -> second_level = 2
-# pet-color   -> pet_color = "brown"
-# จากนั้น print ตัวแปรทั้งสามเพื่อตรวจคำตอบ
+# ชื่อตัวแปรด้านล่างผิดกฎ ให้เขียนใหม่เป็นชื่อที่ถูกต้อง
+# เด็กเป็นคนคิดชื่อใหม่เอง แล้วกำหนดค่าและแสดงค่าทุกตัว
+#
+# player name
+# 2nd_level
+# pet-color
 
 
 print("\n--- Your turn 1 ---")

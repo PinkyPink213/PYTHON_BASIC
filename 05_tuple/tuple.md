@@ -1,51 +1,27 @@
-# Python Tuples สำหรับเด็ก
+# Chapter 05 — Python Tuples
 
-Tuple ใช้เก็บข้อมูลหลายค่าเหมือน List แต่เมื่อสร้างแล้วจะเปลี่ยน เพิ่ม หรือลบสมาชิกโดยตรงไม่ได้
+Tuple เก็บข้อมูลหลายค่าที่มีลำดับและเก็บค่าซ้ำได้ แต่เปลี่ยนสมาชิกโดยตรงไม่ได้
 
-```python
-animals = ("cat", "dog", "rabbit")
-```
+## ลำดับไฟล์
 
-## คุณสมบัติของ Tuple
+| ไฟล์ | สิ่งที่เรียน |
+|---|---|
+| `01_python_tuples.py` | สร้าง Tuple, ค่าซ้ำ, Tuple ว่าง และ Tuple หนึ่งสมาชิก |
+| `02_access_tuples.py` | Index, Negative Index, Slicing, `in`, `not in` |
+| `03_update_tuples.py` | แปลง Tuple → List → แก้ไข → Tuple |
+| `04_unpack_tuples.py` | Unpack ค่าใส่ตัวแปรและใช้ `*` รวบค่าที่เหลือ |
+| `05_loop_tuples.py` | อ่าน Tuple ด้วย `for` และใช้ร่วมกับ Conditions |
+| `06_join_and_methods.py` | รวมด้วย `+`, ทำซ้ำด้วย `*`, `count()`, `index()` |
+| `07_1_space_coordinates_game.py` | เล่นเกมพิกัดอวกาศตัวอย่าง |
+| `07_2_create_your_tuple_game.py` | สร้างเกม Tuple ของตัวเอง |
 
-- มีลำดับแน่นอน
-- เก็บค่าซ้ำได้
-- เข้าถึงด้วย Index ได้
-- เปลี่ยนสมาชิกโดยตรงไม่ได้ (`unchangeable`)
-- เขียนด้วยวงเล็บ `()`
+## สิ่งที่ต้องจำ
 
-## หัวข้อในบทนี้
+- Tuple หนึ่งสมาชิกต้องมี comma เช่น `("cat",)`
+- ถ้าต้องแก้ไขสมาชิก ต้องแปลงผ่าน List
+- Unpack ต้องมีจำนวนตัวแปรสัมพันธ์กับข้อมูล เว้นแต่ใช้ `*`
 
-1. Python Tuples
-2. Access Tuples
-3. Update Tuples
-4. Unpack Tuples
-5. Loop Tuples
-6. Join Tuples
-7. Tuple Methods
-8. Tuple Exercises
-9. Code Challenge
+## ผลลัพธ์ท้ายบท
 
-## คำสั่งสำคัญ
-
-```python
-colors = ("red", "green", "blue")
-
-print(colors[0])
-print(colors[-1])
-print(len(colors))
-print("red" in colors)
-
-first, second, third = colors
-joined = colors + ("yellow",)
-```
-
-## สิ่งที่ควรจำ
-
-- Tuple หนึ่งสมาชิกต้องมี comma: `("cat",)`
-- Index เริ่มจาก `0`
-- ใช้ Slicing ได้
-- ถ้าจำเป็นต้องแก้ไข ให้แปลงเป็น List แล้วแปลงกลับ
-- `count()` นับจำนวนค่าที่ซ้ำ
-- `index()` หาตำแหน่งแรกของค่า
+เด็กใช้ Tuple เก็บข้อมูลคงที่ เช่น พิกัด กฎ หรือตัวเลือกที่ไม่ควรถูกแก้ และนำไปสร้างเกมได้
 

@@ -20,22 +20,28 @@ friend_color = favorite_color
 print(friend_color)
 
 
-print("\n--- Typing Practice: Build a player card ---")
-# พิมพ์ตาม แล้วลองเปลี่ยนชื่อและคะแนนเป็นค่าของตัวเอง
-# player_name = "Nida"
-# player_score = 20
-# print(player_name)
-# print(player_score)
-# player_score = 30
-# print(player_score)
+print("\n--- Practice 1: Store values ---")
+# สร้างตัวแปร player_name เก็บชื่อผู้เล่นที่เด็กเลือกเอง
+# สร้างตัวแปร player_score เก็บเลข 20
+# จากนั้นแสดงค่าของตัวแปรทั้งสอง
+
+
+print("\n--- Practice 2: Change a value ---")
+# เปลี่ยนค่า player_score จาก 20 เป็น 30
+# แล้วแสดงค่าใหม่เพื่อตรวจสอบ
+
+
+print("\n--- Practice 3: Copy a value ---")
+# สร้างตัวแปร best_score แล้วนำค่าจาก player_score ไปเก็บไว้
+# จากนั้นแสดง best_score
 
 
 print("\n--- Your turn 1 ---")
-# TODO 1: สร้างตัวแปร pet_name เก็บชื่อสัตว์เลี้ยง แล้ว print(pet_name)
+# TODO 1: สร้างตัวแปร pet_name เก็บชื่อสัตว์เลี้ยง แล้วแสดงค่าที่เก็บไว้
 
 
 print("\n--- Your turn 2 ---")
-# TODO 2: สร้างตัวแปร coins = 10 จากนั้นเปลี่ยนเป็น 15 แล้ว print(coins)
+# TODO 2: สร้างตัวแปร coins เก็บเลข 10 จากนั้นเปลี่ยนเป็น 15 แล้วแสดงค่าใหม่
 
 
 # === คำถามเช็กความเข้าใจ ===

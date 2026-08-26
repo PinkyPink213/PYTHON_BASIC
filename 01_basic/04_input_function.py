@@ -11,16 +11,13 @@ favorite_food = input("What food do you like? ")
 print("You live in " + city + " and like " + favorite_food + ".")
 
 
-print("\n--- Example 3: Clean the answer ---")
-color = input("Choose a color: ").strip().lower()
-print("You chose " + color + ".")
+print("\n--- Practice 1: Ask one question ---")
+# ถามชื่อผู้เล่น เก็บคำตอบไว้ในตัวแปร แล้วแสดงคำทักทาย
 
 
-print("\n--- Typing Practice: Make a welcome message ---")
-# พิมพ์ตามแล้ว Run เพื่อตอบคำถามด้วยข้อมูลของตัวเอง
-# player_name = input("What is your name? ")
-# favorite_game = input("What game do you like? ")
-# print("Hello, " + player_name + "! You like " + favorite_game + ".")
+print("\n--- Practice 2: Ask two questions ---")
+# ถามสัตว์และสีที่ชอบอย่างละหนึ่งคำถาม
+# จากนั้นนำคำตอบทั้งสองมาสร้างประโยคหนึ่งประโยค
 
 
 print("\n--- Your turn 1 ---")
@@ -29,10 +26,6 @@ print("\n--- Your turn 1 ---")
 
 print("\n--- Your turn 2 ---")
 # TODO 2: ถามชื่อโรงเรียนและวิชาที่ชอบ แล้วแสดงคำตอบในประโยคเดียว
-
-
-print("\n--- Your turn 3 ---")
-# TODO 3: ถามชื่อผู้เล่น ใช้ .strip().upper() แล้วแสดงชื่อที่ได้
 
 
 # === คำถามเช็กความเข้าใจ ===

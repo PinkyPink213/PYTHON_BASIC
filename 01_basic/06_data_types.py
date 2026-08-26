@@ -20,16 +20,19 @@ print(type(number))
 print(type(text_number))
 
 
-print("\n--- Typing Practice: พิมพ์และทาย ---")
-# พิมพ์ตาม ทายชนิดข้อมูลก่อน แล้วใช้ type() ตรวจ
-# game_name = "Dragon Cave"
-# lives = 3
-# speed = 2.5
-# game_over = False
-# print(type(game_name))
-# print(type(lives))
-# print(type(speed))
-# print(type(game_over))
+print("\n--- Practice 1: Guess the types ---")
+# ทายชนิดข้อมูลของแต่ละค่าก่อนเขียนโค้ด
+# จากนั้นเก็บแต่ละค่าในตัวแปรและใช้ type() ตรวจคำตอบ
+#
+# "Dragon Cave"
+# 3
+# 2.5
+# False
+
+
+print("\n--- Practice 2: Same look, different type ---")
+# สร้างตัวแปรหนึ่งตัวเก็บเลข 25 และอีกตัวเก็บข้อความ "25"
+# ใช้ type() พิสูจน์ว่าทั้งสองตัวมีชนิดข้อมูลต่างกัน
 
 
 print("\n--- Your turn 1 ---")
@@ -46,4 +49,3 @@ score = "50"
 # 1. "25" กับ 25 เป็นข้อมูลชนิดเดียวกันหรือไม่?
 # 2. จำนวนทศนิยมใช้ชนิดใด?
 # 3. bool มีค่าอะไรได้บ้าง?
-
