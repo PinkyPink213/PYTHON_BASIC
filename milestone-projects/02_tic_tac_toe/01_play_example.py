@@ -64,20 +64,25 @@ WINNING_LINES = (
 
 
 def create_board():
-    return [[" " for column in range(3)] for row in range(3)]
+    # เขียน Nested List ตรง ๆ ด้วยสิ่งที่เรียนแล้ว ไม่ใช้ List Comprehension
+    return [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
 
 
 def show_board(board):
     print("\n    1   2   3")
-    for index, row in enumerate(board):
-        print(str(index + 1) + " | " + " | ".join(row) + " |")
+    for index in range(3):
+        print(str(index + 1) + " | " + " | ".join(board[index]) + " |")
         if index < 2:
             print("  |---+---+---|")
 
 
 def has_won(board, symbol):
     for line in WINNING_LINES:
-        if all(board[row][column] == symbol for row, column in line):
+        line_complete = True
+        for row, column in line:
+            if board[row][column] != symbol:
+                line_complete = False
+        if line_complete:
             return True
     return False
 

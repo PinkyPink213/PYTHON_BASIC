@@ -1,4 +1,4 @@
-"""เกมตัวอย่างสมบูรณ์: Animal Hangman"""
+"""เกมตัวอย่างสมบูรณ์: Choose Your Category Hangman"""
 
 # ==================================================
 # เกมนี้คืออะไร?
@@ -15,7 +15,7 @@
 # ==================================================
 # Features ของเกม
 # ==================================================
-# - สุ่มคำจากหมวด Animals พร้อมคำใบ้
+# - ให้ผู้เล่นเลือก Category แล้วสุ่มคำพร้อมคำใบ้จากหมวดนั้น
 # - แสดงคำลับด้วย _ และเปิดเฉพาะตัวอักษรที่ทายถูก
 # - เก็บตัวอักษรที่เคยทาย เพื่อป้องกันการทายซ้ำ
 # - ตรวจว่าผู้เล่นพิมพ์ตัวอักษรเพียง 1 ตัว
@@ -26,7 +26,7 @@
 # ==================================================
 # Flow ของเกม
 # ==================================================
-# START -> สุ่มคำและคำใบ้
+# START -> เลือก Category -> สุ่มคำและคำใบ้
 #   |
 #   v
 # แสดงรูป, คำใบ้, คำที่ซ่อน, ตัวอักษรที่เคยทาย และหัวใจ
@@ -65,17 +65,38 @@ HANGMAN_ART = (
     """ +---+\n O   |\n/|\\  |\n/ \\  |\n    ===""",
 )
 
-WORDS = {
-    "rabbit": "It has long ears.",
-    "tiger": "It has orange and black stripes.",
-    "panda": "It likes bamboo.",
-    "dolphin": "It is a clever sea animal.",
+CATEGORIES = {
+    "animals": {
+        "rabbit": "It has long ears.",
+        "tiger": "It has orange and black stripes.",
+        "panda": "It likes bamboo.",
+    },
+    "food": {
+        "pizza": "It has cheese and a round base.",
+        "sushi": "It often has rice and seaweed.",
+        "mango": "It is a sweet yellow fruit.",
+    },
+    "space": {
+        "rocket": "It carries people beyond Earth.",
+        "saturn": "It is famous for its rings.",
+        "comet": "It is an icy space traveler.",
+    },
 }
 
 
 def choose_word(word_data):
     word = random.choice(list(word_data.keys()))
     return word, word_data[word]
+
+
+def choose_category(category_data):
+    """แสดงหมวดและถามซ้ำจนผู้เล่นพิมพ์ Key ที่มีอยู่จริง."""
+    print("Categories: " + " | ".join(category_data))
+    category = input("Choose a category: ").strip().lower()
+    while category not in category_data:
+        print("Please choose animals, food, or space.")
+        category = input("Choose a category: ").strip().lower()
+    return category
 
 
 def make_display(secret_word, correct_letters):
@@ -88,8 +109,9 @@ def make_display(secret_word, correct_letters):
     return " ".join(display)
 
 
-def show_screen(secret_word, hint, correct_letters, guessed_letters, mistakes):
+def show_screen(category, secret_word, hint, correct_letters, guessed_letters, mistakes):
     print("\n" + HANGMAN_ART[mistakes])
+    print("Category: " + category.upper())
     print("Hint: " + hint)
     print("Word: " + make_display(secret_word, correct_letters))
     print("Guessed: " + " ".join(sorted(guessed_letters)))
@@ -97,17 +119,18 @@ def show_screen(secret_word, hint, correct_letters, guessed_letters, mistakes):
 
 
 def play_hangman():
-    secret_word, hint = choose_word(WORDS)
+    category = choose_category(CATEGORIES)
+    secret_word, hint = choose_word(CATEGORIES[category])
     guessed_letters = set()
     correct_letters = set()
     mistakes = 0
 
     print("╔══════════════════════════════╗")
-    print("║        ANIMAL HANGMAN        ║")
+    print("║       CATEGORY HANGMAN       ║")
     print("╚══════════════════════════════╝")
 
     while mistakes < 4 and not set(secret_word).issubset(correct_letters):
-        show_screen(secret_word, hint, correct_letters, guessed_letters, mistakes)
+        show_screen(category, secret_word, hint, correct_letters, guessed_letters, mistakes)
         guess = input("Guess one letter: ").strip().lower()
 
         if len(guess) != 1 or not guess.isalpha():
@@ -123,7 +146,7 @@ def play_hangman():
                 mistakes += 1
                 print("Wrong guess!")
 
-    show_screen(secret_word, hint, correct_letters, guessed_letters, mistakes)
+    show_screen(category, secret_word, hint, correct_letters, guessed_letters, mistakes)
     if set(secret_word).issubset(correct_letters):
         print("★ YOU SAVED THE ANIMAL! ★")
     else:

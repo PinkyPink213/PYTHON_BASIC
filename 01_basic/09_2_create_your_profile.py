@@ -1,4 +1,9 @@
-"""บทที่ 9.2: สร้าง Profile Generator ของตัวเอง"""
+"""บทที่ 9.2: สร้าง Profile Generator ของตัวเอง (Terminal Version)
+
+ทำเสร็จแล้วอย่าทิ้งไฟล์นี้ ให้เปิดคู่กับ
+11_2_create_your_profile_pygame.py แล้ว Upgrade DATA/สูตร/เรื่องราวของเรา
+ด้วย STEP และ TODO Guide
+"""
 
 # TODO 1: ตั้งชื่อโปรแกรมและแสดงกรอบด้วย print()
 # TODO 2: ถามข้อมูลข้อความอย่างน้อย 3 คำถามด้วย input()
@@ -17,4 +22,3 @@
 # [ ] Type conversion
 # [ ] Mathematical operations
 # [ ] f-string
-

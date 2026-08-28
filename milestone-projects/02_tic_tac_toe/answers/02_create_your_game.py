@@ -9,13 +9,13 @@ WINNING_LINES = (
 
 
 def new_board():
-    return [[" " for column in range(3)] for row in range(3)]
+    return [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
 
 
 def draw(board):
     print("\n    1   2   3")
-    for row_number, row in enumerate(board):
-        print(str(row_number + 1) + "   " + " | ".join(row))
+    for row_number in range(3):
+        print(str(row_number + 1) + "   " + " | ".join(board[row_number]))
         if row_number < 2:
             print("   ---+---+---")
 
@@ -67,4 +67,3 @@ def play():
 
 
 play()
-

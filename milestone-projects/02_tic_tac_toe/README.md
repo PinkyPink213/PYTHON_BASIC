@@ -1,5 +1,12 @@
 # Capsule 2: Tic-Tac-Toe
 
+หลัง Terminal Project มี `03_1_play_pygame.py` สำหรับศึกษา และ
+`03_2_create_your_pygame.py` สำหรับ Upgrade ผลงาน `02_create_your_game.py`
+โดยรักษา board logic, winning lines และ score ของเด็กไว้
+
+Starter Pygame เรียง STEP ตรงกับตัวอย่าง: Board Functions → Setup → State →
+Mouse Event → Win/Draw Update → Grid/Symbol Draw → Test → Creative Studio
+
 ## เกมนี้คืออะไร?
 
 Tic-Tac-Toe เป็นเกมกระดาน 3×3 สำหรับผู้เล่นสองคน ผู้เล่น X และ O ผลัดกันเลือกแถวกับคอลัมน์ คนแรกที่เรียงสัญลักษณ์ครบสามช่องในแนวนอน แนวตั้ง หรือแนวทแยงชนะ
@@ -37,6 +44,19 @@ Tic-Tac-Toe เป็นเกมกระดาน 3×3 สำหรับผ�
 4. สร้างและทดสอบ Function ทีละตัว
 5. ต่อ Functions เป็น Game Loop
 6. เปลี่ยนธีมและเพิ่ม Creative Features อย่างน้อย 2 อย่าง
+7. เปิด Terminal Version คู่กับ `03_2_create_your_pygame.py` แล้วทำ Migration Map
+8. ทดสอบ win/draw/ช่องซ้ำ/restart ให้ครบก่อน Creative Studio
+
+## Terminal → Pygame
+
+| Terminal | Pygame | สิ่งที่ยังเหมือนเดิม |
+|---|---|---|
+| `input()` row/column | mouse click → row/column | board และการตรวจช่องว่าง |
+| `show_board()`/`print()` | grid, symbol และ status ใน DRAW | X/O ใน Nested List |
+| `while` ผลัดกันเล่น | Pygame Game Loop | win, draw และสลับ player |
+
+Core ต้องผ่านก่อน แล้วเด็กเลือกอย่างน้อย 2 ด้าน เช่น theme/symbol, palette,
+ชื่อ/คะแนน, highlight เส้นชนะ หรือกติกาพิเศษ พร้อมอธิบายว่าแก้ DATA/logic/UI ตรงไหน
 
 ## Creative Ideas
 
@@ -65,4 +85,3 @@ Tic-Tac-Toe เป็นเกมกระดาน 3×3 สำหรับผ�
 - Feature ใดเป็นความคิดของเราเอง?
 
 ตัวอย่าง Creative Answer อยู่ที่ [answers/02_create_your_game.py](./answers/02_create_your_game.py)
-

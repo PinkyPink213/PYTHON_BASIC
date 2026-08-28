@@ -1,6 +1,42 @@
-# Python for Kids — 10-Class Game Creator Path
+# Python for Kids — Terminal to Pygame Creator Path
 
 หลักสูตร Python แบบลงมือพิมพ์และสร้างเกมสำหรับเด็กประถม
+
+![ตัวอย่างโลกของเกมที่จะสร้าง](./docs/images/pygame-game-creator-path.png)
+
+เด็กจะเริ่มจาก Python บน Terminal เพื่อเข้าใจ `print()`, `input()` และ Logic
+จากนั้นในแต่ละ Chapter จะเรียน Pygame เพิ่มเพียงหนึ่งเรื่อง แล้วนำความรู้ใหม่
+ไปแปลง Mini Project เดิมให้มีหน้าต่าง ภาพ ปุ่ม และการโต้ตอบ
+
+## ติดตั้ง Pygame
+
+macOS / Linux:
+
+```bash
+python3 -m pip install pygame
+```
+
+Windows (PowerShell หรือ Command Prompt):
+
+```powershell
+py -m pip install pygame
+```
+
+ตรวจว่าติดตั้งสำเร็จ:
+
+```powershell
+py -c "import pygame; print(pygame.version.ver)"
+```
+
+> สำหรับครู: ให้ทดลอง Run ไฟล์ Pygame ทุกไฟล์บนเครื่องที่จะใช้สอนก่อนเริ่มคาบ
+> ไฟล์ตัวอย่างมีคอมเมนต์แบ่ง `SETUP`, `EVENT`, `UPDATE` และ `DRAW` ไว้แล้ว
+> หาก Windows ไม่มีคำสั่ง `py` ให้ลอง `python` และตรวจว่าเลือก Add Python to PATH
+> ตอนติดตั้ง Python แล้ว
+>
+> หากใช้ Python รุ่นใหม่มากและติดตั้ง `pygame` ไม่ผ่าน ให้ใช้
+> `py -m pip install pygame-ce` (Windows) หรือ
+> `python3 -m pip install pygame-ce` (macOS/Linux) แทน โค้ดยังคงเขียน
+> `import pygame` เหมือนเดิม
 
 ในแต่ละ Chapter ใช้รูปแบบเดียวกัน:
 
@@ -8,7 +44,43 @@
 2. เด็กอ่านโจทย์ Practice แล้วคิดและพิมพ์โค้ดด้วยตัวเอง
 3. เด็กทำ Your Turn หรือ TODO
 4. ตรวจคำตอบในโฟลเดอร์ `answers`
-5. ปิดท้ายด้วยเกมตัวอย่างและงานสร้างเกมของตัวเอง
+5. ปิดท้ายด้วยเกม Terminal เพื่อยืนยันความเข้าใจ Python
+6. เรียน Pygame Basic หนึ่งเรื่อง
+7. แปลงเกมเดิมเป็น Pygame และทำ Creative Challenge
+
+### วิธีสอน Pygame ให้เด็กรู้ว่ากำลังทำอะไร
+
+ทุกไฟล์สอนใช้จังหวะเดียวกัน: **เป้าหมาย → พิมพ์ → ทายผล → Run → อธิบาย**
+ครูให้เด็กชี้ 4 ส่วนก่อนจบ Practice: **DATA** ที่เกมจำ, **EVENT** ที่ผู้เล่นทำ,
+**UPDATE/logic** ที่เปลี่ยนข้อมูล และ **DRAW** ที่นำข้อมูลไปแสดง ไม่เน้นจำคำสั่งโดด ๆ
+
+Chapter 01–03 ใช้ `pygame.event.wait()` เพื่อยังไม่ข้ามไปใช้ Loop; Chapter 04
+จึงสอน Game Loop แบบ `EVENT → UPDATE → DRAW` แล้วใช้ pattern นี้ต่อจนจบหลักสูตร
+
+ไฟล์ Upgrade ต้องเปิดคู่กับ Terminal Project ของเด็กและใช้ Migration Map:
+เก็บ DATA/logic เดิม, เปลี่ยน `input → event`, เปลี่ยน `print → render/draw`
+จึงไม่ต้องเขียนเกมซ้ำจากศูนย์
+
+## Pygame Progression
+
+| Chapter | เกมที่นำมา Upgrade | Pygame เรื่องใหม่ |
+|---|---|---|
+| 01 Basic | Profile Generator | เปิดหน้าต่าง สี รูปทรง เส้น และข้อความ |
+| 02 If–Else | Mystery Animal | Event, รูปภาพ และปุ่มคลิก |
+| 03 Lists | Treasure Backpack | วาด Inventory จาก List |
+| 04 Loops | Mystery Animal Loop | Game loop, FPS, keyboard และ animation |
+| 05 Tuples | Space Coordinates | ตำแหน่ง `(x, y)` และการคลิกวัตถุ |
+| 06 Sets | Rescue Team | เลือกตัวละครโดยไม่ซ้ำ |
+| 07 Dictionaries | Pet Rescue | สร้าง Character Card จาก Dictionary |
+| 08 Functions | Dice Battle | แยก UI และ game logic เป็น Functions |
+
+Chapter 01–02 เก็บ Terminal Version ไว้ครบ แล้วเพิ่ม Pygame Version ต่อท้าย
+เพื่อให้ครูเปรียบเทียบ `print/input` กับ `render/event` ได้โดยตรง ส่วนภาพใน
+`assets/` เป็นตัวเลือกพร้อมใช้ เด็กสามารถเปลี่ยนเป็นภาพของตัวเองหลังเกมทำงานแล้ว
+
+ตั้งแต่ Chapter 04 มี `assets/game_asset_choices.png` เป็นภาพ atlas ชุด Space,
+Heroes, Pets, Dice Monster, Heart และ Star พร้อม README บอกวิธีเลือกใช้ เด็กไม่ต้อง
+เสียเวลาค้นภาพในคาบ แต่ยังเลือกวาดหรือเปลี่ยนภาพเองได้ใน Creative Challenge
 
 ## 10 Classes
 

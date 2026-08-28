@@ -1,5 +1,19 @@
 # Chapter 08 — Functions, Randomisation และ Error Handling
 
+## Core Route — 120 นาที
+
+| เวลา | กิจกรรมหลัก |
+|---|---|
+| 0–10 | Demo logic Function เทียบ draw Function |
+| 10–50 | define/call, parameters, return และ scope |
+| 50–70 | เกม Function Terminal ของเด็ก |
+| 70–90 | พิมพ์ `12_pygame_ui_functions.py` |
+| 90–115 | Upgrade ด้วย `13_2` |
+| 115–120 | จัดประเภท DATA/logic/UI และ Demo |
+
+`*args/**kwargs`, decorator, lambda, recursion และ generator เป็น Bonus
+ไม่อยู่ใน Core Route สองชั่วโมง
+
 บทนี้สอนแยกโปรแกรมเป็นงานย่อยที่เรียกซ้ำได้ และรวมความรู้เพื่อสร้างเกม
 
 ## ลำดับไฟล์
@@ -19,6 +33,9 @@
 | `10_generators.py` | ส่งค่าทีละตัวด้วย `yield` |
 | `11_1_dice_battle_game.py` | เล่นเกมต่อสู้ด้วยลูกเต๋า |
 | `11_2_create_your_function_game.py` | สร้างเกม Function ของตัวเอง |
+| `12_pygame_ui_functions.py` | Pygame Basic: แยก UI เป็น Functions |
+| `13_1_dice_battle_pygame.py` | Guided Example: Dice Battle Pygame |
+| `13_2_create_your_function_game_pygame.py` | Upgrade เกมที่เด็กสร้างใน `11_2` |
 
 ## แกนหลักที่ต้องใช้ในเกม
 
@@ -32,3 +49,9 @@ Decorators, Lambda, Recursion และ Generators เป็นหัวข้�
 ## ผลลัพธ์ท้ายบท
 
 เด็กแบ่งเกมออกเป็น Functions รับ Arguments ส่งค่ากลับ สุ่มเหตุการณ์ และรับมือคำตอบผิดได้
+
+## Pygame Upgrade
+
+เด็กแยก game logic ออกจาก UI functions แล้วนำ Dice Battle เดิมมาแสดงผลด้วยปุ่ม
+ลูกเต๋าและข้อความบนหน้าจอ ปิดท้ายด้วยการอธิบายว่า Function ใด update ข้อมูลและ
+Function ใดมีหน้าที่ draw เท่านั้น

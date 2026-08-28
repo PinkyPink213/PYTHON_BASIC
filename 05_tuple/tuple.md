@@ -1,5 +1,18 @@
 # Chapter 05 — Python Tuples
 
+## Core Route — 120 นาที
+
+| เวลา | กิจกรรมหลัก |
+|---|---|
+| 0–10 | Demo แผนที่และพิกัด |
+| 10–50 | create, access, unpack และ immutability |
+| 50–70 | เกม Tuple Terminal ของเด็ก |
+| 70–90 | พิมพ์ `08_pygame_coordinates_and_click.py` |
+| 90–115 | Upgrade ด้วย `09_2` |
+| 115–120 | อธิบาย Tuple→position→draw |
+
+Tuple methods และการตกแต่งแผนที่เป็น Bonus
+
 Tuple เก็บข้อมูลหลายค่าที่มีลำดับและเก็บค่าซ้ำได้ แต่เปลี่ยนสมาชิกโดยตรงไม่ได้
 
 ## ลำดับไฟล์
@@ -14,6 +27,9 @@ Tuple เก็บข้อมูลหลายค่าที่มีลำ�
 | `06_join_and_methods.py` | รวมด้วย `+`, ทำซ้ำด้วย `*`, `count()`, `index()` |
 | `07_1_space_coordinates_game.py` | เล่นเกมพิกัดอวกาศตัวอย่าง |
 | `07_2_create_your_tuple_game.py` | สร้างเกม Tuple ของตัวเอง |
+| `08_pygame_coordinates_and_click.py` | Pygame Basic: พิกัด `(x, y)` และการคลิกวัตถุ |
+| `09_1_space_coordinates_pygame.py` | Guided Example: Space Coordinates Pygame |
+| `09_2_create_your_tuple_game_pygame.py` | Upgrade เกมที่เด็กสร้างใน `07_2` |
 
 ## สิ่งที่ต้องจำ
 
@@ -25,3 +41,8 @@ Tuple เก็บข้อมูลหลายค่าที่มีลำ�
 
 เด็กใช้ Tuple เก็บข้อมูลคงที่ เช่น พิกัด กฎ หรือตัวเลือกที่ไม่ควรถูกแก้ และนำไปสร้างเกมได้
 
+## Pygame Upgrade
+
+เด็กใช้ Tuple `(name, x, y)` วางวัตถุบนแผนที่และตรวจการคลิก จากนั้นนำพิกัดจาก
+Terminal Space Coordinates มาสร้างแผนที่ภาพ พร้อม Creative Choice เป็นดาวเคราะห์
+เกาะสมบัติ หรือจุดหมายที่เด็กออกแบบเอง

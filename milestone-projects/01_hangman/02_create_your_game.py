@@ -1,7 +1,8 @@
 """Guided Project: สร้าง Hangman ในธีมของตัวเอง"""
 
-# STEP 1 — เลือกธีมและสร้าง Dictionary คำศัพท์อย่างน้อย 5 คำ
-# แต่ละคำต้องมีคำใบ้ เช่น food, space, games หรือ magic
+# STEP 1 — สร้าง Nested Dictionary อย่างน้อย 3 Categories
+# แต่ละ Category มีคำศัพท์ของเด็กอย่างน้อย 3 คำและคำใบ้
+# สร้าง choose_category() ให้ผู้เล่นเลือกหมวดก่อนสุ่มคำ
 
 # STEP 2 — สร้าง Tuple ของ HANGMAN_ART อย่างน้อย 4 ระดับ
 # วาดเองได้ ให้จำนวนรูปสัมพันธ์กับจำนวนครั้งที่ผิด
@@ -36,4 +37,3 @@
 # [ ] random.choice()
 # [ ] if-elif-else
 # [ ] ตรวจ Input ผิดและคำตอบซ้ำ
-

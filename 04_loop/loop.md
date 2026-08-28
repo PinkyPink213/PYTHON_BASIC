@@ -1,5 +1,18 @@
 # Chapter 04 — Python Loops และ Match-Case
 
+## Core Route — 120 นาที
+
+| เวลา | กิจกรรมหลัก |
+|---|---|
+| 0–10 | แกะโค้ดซ้ำจาก Chapter 03 |
+| 10–50 | for, range, while, break และ continue |
+| 50–70 | เกม Terminal Loop ของเด็ก |
+| 70–90 | พิมพ์ `07` และ trace EVENT→UPDATE→DRAW |
+| 90–115 | Upgrade เกมเดิมด้วย `08_2` |
+| 115–120 | อธิบายหนึ่ง frame และ Demo |
+
+`match-case` และ animation ตกแต่งเป็น Bonus เมื่อ Core เสร็จ
+
 Loop ช่วยทำงานซ้ำ ส่วน `match-case` ใช้เลือกการทำงานจากค่าหนึ่งค่าและไม่ใช่ Loop
 
 ## ลำดับไฟล์
@@ -15,6 +28,9 @@ Loop ช่วยทำงานซ้ำ ส่วน `match-case` ใช้เ
 | `06_1_mystery_animal_while_game.py` | เล่น Guessing Game เวอร์ชัน `while` |
 | `06_2_convert_game_to_match.py` | แปลงเฉพาะส่วน `if-elif-else` ที่กำหนดเป็น `match-case` |
 | `06_3_create_your_while_match_game.py` | สร้างเกมถามซ้ำและเมนูคำสั่งด้วยไอเดียของตัวเอง |
+| `07_pygame_game_loop_animation.py` | Pygame Basic: Game Loop, FPS และ Animation |
+| `08_1_mystery_animal_loop_pygame.py` | Guided Example: Mystery Animal Pygame |
+| `08_2_create_your_while_match_game_pygame.py` | Upgrade เกมที่เด็กสร้างใน `06_3` |
 
 ## เลือกใช้ให้ถูก
 
@@ -27,3 +43,9 @@ Loop ช่วยทำงานซ้ำ ส่วน `match-case` ใช้เ
 ## ผลลัพธ์ท้ายบท
 
 เด็กดัดแปลง Guessing Game ให้ถามซ้ำ รับมือคำตอบผิด และเลือกคำสั่งด้วย `match-case` ได้
+
+## Pygame Upgrade
+
+บทนี้เริ่ม Game Loop อย่างเป็นทางการผ่าน `EVENT → UPDATE → DRAW` รวม FPS และ
+animation แล้วนำไปทำ Mystery Animal เวอร์ชันเคลื่อนไหว ทุก STEP มี Practice
+ให้พิมพ์ทันที และไม่ใช้ Pygame helper ที่ยังไม่ได้สอน

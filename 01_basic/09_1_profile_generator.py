@@ -1,4 +1,9 @@
-"""บทที่ 9.1: Mini Project — Adventure Profile Generator"""
+"""บทที่ 9.1: Mini Project — Adventure Profile Generator (Terminal Version)
+
+เมื่อเล่นและเข้าใจไฟล์นี้แล้ว ไปพิมพ์ 10_pygame_first_window.py ก่อน
+จากนั้นทำ 11_1_profile_generator_pygame.py เพื่อเก็บ DATA/การคำนวณเดิม
+และเปลี่ยน print เป็น Profile Card บนหน้าต่างเกม
+"""
 
 # โปรเจกต์ตัวอย่างรวม print, variables, strings, input,
 # data types, type conversion และการคำนวณ
@@ -27,4 +32,3 @@ print("Your adventure begins now!")
 # 1. เพราะอะไร age และ lucky_number จึงใช้ int(input())?
 # 2. hero_name เกิดจากการต่อ String ใดบ้าง?
 # 3. next_age และ double_lucky_number คำนวณอย่างไร?
-

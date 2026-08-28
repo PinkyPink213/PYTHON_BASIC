@@ -1,5 +1,18 @@
 # Chapter 06 — Python Sets
 
+## Core Route — 120 นาที
+
+| เวลา | กิจกรรมหลัก |
+|---|---|
+| 0–10 | Demo การเลือกสมาชิกไม่ซ้ำ |
+| 10–50 | membership, add/remove และ set operations |
+| 50–70 | เกม Set Terminal ของเด็ก |
+| 70–90 | พิมพ์ `09_pygame_set_selection.py` |
+| 90–115 | Upgrade ด้วย `10_2` โดยยังไม่ใช้ Dictionary |
+| 115–120 | อธิบาย selected→membership→สี Card |
+
+Frozenset และ methods เพิ่มเติมเป็น Bonus
+
 Set เก็บค่าที่ไม่ซ้ำ ไม่มี Index และลำดับที่แสดงอาจเปลี่ยนได้
 
 ## ลำดับไฟล์
@@ -15,6 +28,9 @@ Set เก็บค่าที่ไม่ซ้ำ ไม่มี Index แ�
 | `07_set_methods_exercises.py` | แบบฝึกรวม Set Methods |
 | `08_1_rescue_team_game.py` | เล่นเกมจัดทีมกู้ภัยโดยใช้ Set |
 | `08_2_create_your_set_game.py` | สร้างเกม Set ของตัวเอง |
+| `09_pygame_set_selection.py` | Pygame Basic: เลือกตัวละครโดยไม่ซ้ำ |
+| `10_1_rescue_team_pygame.py` | Guided Example: Rescue Team Pygame |
+| `10_2_create_your_set_game_pygame.py` | Upgrade เกมที่เด็กสร้างใน `08_2` |
 
 ## สิ่งที่ต้องจำ
 
@@ -27,3 +43,7 @@ Set เก็บค่าที่ไม่ซ้ำ ไม่มี Index แ�
 
 เด็กใช้ Set กำจัดข้อมูลซ้ำ ตรวจสมาชิก และเปรียบเทียบกลุ่มข้อมูลเพื่อสร้างระบบทีมในเกมได้
 
+## Pygame Upgrade
+
+เด็กคลิกเลือกสมาชิกลง Set โดยชื่อไม่ซ้ำ สีของ Card แสดง membership และภารกิจ
+ตรวจ required skills ด้วย Set Operations เท่านั้น ไม่ใช้ Dictionary ก่อน Chapter 07
