@@ -13,6 +13,9 @@
 
 Nested List และการแต่ง asset เพิ่มเป็น Bonus
 
+บทสอน Pygame ให้พิมพ์ Example การ load/scale/draw รูปแรกก่อน แล้วทำ
+Your turn/TODO ซ้ำ Pattern กับ item อื่น พร้อม Run Checkpoint ทุกช่วง
+
 List ใช้เก็บข้อมูลหลายค่าที่มีลำดับ แก้ไขได้ และเก็บค่าซ้ำได้
 
 ## ลำดับไฟล์

@@ -13,6 +13,9 @@
 
 Frozenset และ methods เพิ่มเติมเป็น Bonus
 
+บทสอน Pygame ให้พิมพ์ Example เลือก Card ก่อน แล้วทำ Your turn/TODO กับ
+`add()`, `remove()` และ membership พร้อม Run Checkpoint
+
 Set เก็บค่าที่ไม่ซ้ำ ไม่มี Index และลำดับที่แสดงอาจเปลี่ยนได้
 
 ## ลำดับไฟล์
@@ -47,3 +50,4 @@ Set เก็บค่าที่ไม่ซ้ำ ไม่มี Index แ�
 
 เด็กคลิกเลือกสมาชิกลง Set โดยชื่อไม่ซ้ำ สีของ Card แสดง membership และภารกิจ
 ตรวจ required skills ด้วย Set Operations เท่านั้น ไม่ใช้ Dictionary ก่อน Chapter 07
+ต้องเลือกสมาชิกต่างกันครบ 3 คนก่อนเริ่มภารกิจเหมือน Terminal Version

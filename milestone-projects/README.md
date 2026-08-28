@@ -10,8 +10,8 @@
 | 02 | [Tic-Tac-Toe](./02_tic_tac_toe) | เกมกระดาน 3×3 สำหรับสองคน พร้อมตรวจ Win และ Draw |
 
 แต่ละ Milestone จะเก็บ Terminal Version สำหรับทบทวนความรู้ทั้ง 8 Chapters และเพิ่ม
-Pygame Version ต่อท้ายในรูปแบบ `_1` ตัวอย่าง, `_2` Starter และ `answers/_2`
-โดยใช้ STEP → Practice → Your Turn แบบเดียวกับเกมท้ายบท
+Pygame Version ต่อท้ายในรูปแบบ `_1` Example สมบูรณ์และ `_2` Guided Starter
+โดยใช้ Example → Your turn/TODO → Run Checkpoint แบบเดียวกับเกมท้ายบท
 
 ## จุดประสงค์
 

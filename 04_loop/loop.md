@@ -13,6 +13,9 @@
 
 `match-case` และ animation ตกแต่งเป็น Bonus เมื่อ Core เสร็จ
 
+บทสอน Pygame เริ่มจาก Example Game Loop ที่รันได้ แล้วจึงทำ Your turn/TODO
+ใน EVENT, UPDATE และ DRAW ทีละส่วน พร้อม Run Checkpoint
+
 Loop ช่วยทำงานซ้ำ ส่วน `match-case` ใช้เลือกการทำงานจากค่าหนึ่งค่าและไม่ใช่ Loop
 
 ## ลำดับไฟล์

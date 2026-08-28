@@ -14,6 +14,9 @@
 `*args/**kwargs`, decorator, lambda, recursion และ generator เป็น Bonus
 ไม่อยู่ใน Core Route สองชั่วโมง
 
+บทสอน Pygame ให้พิมพ์ Example UI Function ที่รันได้ก่อน แล้วทำ Your turn/TODO
+โดยเปลี่ยน Arguments หรือสร้าง Function เล็กหนึ่งตัว พร้อม Run Checkpoint
+
 บทนี้สอนแยกโปรแกรมเป็นงานย่อยที่เรียกซ้ำได้ และรวมความรู้เพื่อสร้างเกม
 
 ## ลำดับไฟล์
@@ -55,3 +58,4 @@ Decorators, Lambda, Recursion และ Generators เป็นหัวข้�
 เด็กแยก game logic ออกจาก UI functions แล้วนำ Dice Battle เดิมมาแสดงผลด้วยปุ่ม
 ลูกเต๋าและข้อความบนหน้าจอ ปิดท้ายด้วยการอธิบายว่า Function ใด update ข้อมูลและ
 Function ใดมีหน้าที่ draw เท่านั้น
+Pygame Version ยังคงชื่อผู้เล่น จำนวนรอบ ผล `battle()` และจำนวนชัยชนะจาก Terminal

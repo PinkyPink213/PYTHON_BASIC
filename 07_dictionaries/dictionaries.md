@@ -13,6 +13,9 @@
 
 Copy และ methods ที่ไม่ใช้ในเกมเป็น Bonus
 
+บทสอน Pygame ให้พิมพ์ Example Card ที่อ่าน Dictionary ก่อน แล้วทำ
+Your turn/TODO เพิ่มหรือแก้ key/value และ Run ตรวจว่า UI อ่านข้อมูลล่าสุด
+
 Dictionary เก็บข้อมูลเป็นคู่ `key: value` และเข้าถึงข้อมูลด้วย Key
 
 ## ลำดับไฟล์
@@ -45,4 +48,5 @@ Dictionary เก็บข้อมูลเป็นคู่ `key: value` แ�
 ## Pygame Upgrade
 
 Nested Dictionary กลายเป็นข้อมูลของ Character Cards และ Pet Rescue UI เด็กเพิ่ม
-ตัวละครใหม่ได้โดยแก้ข้อมูลแทนการคัดลอกโค้ดวาด พร้อม STEP/Practice หลังแนวคิดใหม่
+ตัวละครใหม่ได้โดยแก้ข้อมูลแทนการคัดลอกโค้ดวาด พร้อม Example, Your turn/TODO
+และ Run Checkpoint หลังแนวคิดใหม่

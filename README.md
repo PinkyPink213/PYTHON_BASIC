@@ -40,17 +40,20 @@ py -c "import pygame; print(pygame.version.ver)"
 
 ในแต่ละ Chapter ใช้รูปแบบเดียวกัน:
 
-1. ครูอธิบาย Example
-2. เด็กอ่านโจทย์ Practice แล้วคิดและพิมพ์โค้ดด้วยตัวเอง
-3. เด็กทำ Your Turn หรือ TODO
-4. ตรวจคำตอบในโฟลเดอร์ `answers`
-5. ปิดท้ายด้วยเกม Terminal เพื่อยืนยันความเข้าใจ Python
-6. เรียน Pygame Basic หนึ่งเรื่อง
-7. แปลงเกมเดิมเป็น Pygame และทำ Creative Challenge
+1. เด็กพิมพ์ **Example ที่รันได้** ตามครูและอธิบายผล
+2. ทำ **Your turn / TODO** ที่อยู่ทันทีหลัง Example โดยปรับเพียงเรื่องที่เพิ่งเรียน
+3. ทายผลก่อน Run แล้วตรวจด้วย **Run Checkpoint**
+4. เปิด `answers` หลังลองทำเองแล้วเท่านั้น (เฉพาะบทที่มี Answer)
+5. สร้าง Terminal Example (`_1`) และ Terminal Project ของเด็ก (`_2`)
+6. เรียน Pygame เรื่องใหม่จากไฟล์บทสอนที่มี Example → Your turn → TODO
+7. ศึกษา Pygame Example (`_1`) ที่ Convert เกมเดิมครบทั้ง DATA และ Logic
+8. เปิดสามไฟล์ข้างกัน แล้ว Convert Terminal Project ของเด็กใน Pygame Starter (`_2`)
+9. ทดสอบให้ผลตรง Terminal ก่อนเพิ่ม Creative Game Rules
 
 ### วิธีสอน Pygame ให้เด็กรู้ว่ากำลังทำอะไร
 
-ทุกไฟล์สอนใช้จังหวะเดียวกัน: **เป้าหมาย → พิมพ์ → ทายผล → Run → อธิบาย**
+ทุกไฟล์สอนใช้จังหวะเดียวกัน:
+**Example → พิมพ์ตาม → อธิบาย → Your turn/TODO → ทายผล → Run Checkpoint**
 ครูให้เด็กชี้ 4 ส่วนก่อนจบ Practice: **DATA** ที่เกมจำ, **EVENT** ที่ผู้เล่นทำ,
 **UPDATE/logic** ที่เปลี่ยนข้อมูล และ **DRAW** ที่นำข้อมูลไปแสดง ไม่เน้นจำคำสั่งโดด ๆ
 
@@ -61,11 +64,19 @@ Chapter 01–03 ใช้ `pygame.event.wait()` เพื่อยังไม�
 เก็บ DATA/logic เดิม, เปลี่ยน `input → event`, เปลี่ยน `print → render/draw`
 จึงไม่ต้องเขียนเกมซ้ำจากศูนย์
 
+### ความหมายของชื่อไฟล์เกม
+
+- `_1` คือ Example สมบูรณ์สำหรับเล่น พิมพ์ตาม และศึกษา
+- `_2` คือพื้นที่ให้เด็กสร้างหรือ Convert ผลงานของตัวเองด้วย TODO Guide
+- ไฟล์ Pygame `_1` ต้องรักษาคำถาม ข้อมูล สูตร เงื่อนไข และผลชนะ–แพ้จาก Terminal `_1`
+- ไฟล์ Pygame `_2` ต้องนำ DATA/Logic จาก Terminal `_2` ของเด็ก ไม่เปลี่ยนกลับเป็นธีม Example
+- หน้าตาและวิธีรับคำตอบเปลี่ยนได้ แต่กติกาเดิมต้องผ่าน Test ก่อนเพิ่มกติกาสร้างสรรค์
+
 ## Pygame Progression
 
 | Chapter | เกมที่นำมา Upgrade | Pygame เรื่องใหม่ |
 |---|---|---|
-| 01 Basic | Profile Generator | เปิดหน้าต่าง สี รูปทรง เส้น และข้อความ |
+| 01 Basic | Profile Generator | ติดตั้ง เปิดหน้าต่าง สี รูปทรง เส้น และข้อความ |
 | 02 If–Else | Mystery Animal | Event, รูปภาพ และปุ่มคลิก |
 | 03 Lists | Treasure Backpack | วาด Inventory จาก List |
 | 04 Loops | Mystery Animal Loop | Game loop, FPS, keyboard และ animation |
@@ -73,6 +84,27 @@ Chapter 01–03 ใช้ `pygame.event.wait()` เพื่อยังไม�
 | 06 Sets | Rescue Team | เลือกตัวละครโดยไม่ซ้ำ |
 | 07 Dictionaries | Pet Rescue | สร้าง Character Card จาก Dictionary |
 | 08 Functions | Dice Battle | แยก UI และ game logic เป็น Functions |
+
+## เกมที่เด็กจะได้สร้างในแต่ละ Chapter
+
+ภาพด้านล่างมาจาก Pygame Example ที่อยู่ในหลักสูตรจริง เด็กจะเริ่มจาก Terminal
+Version ก่อน แล้วค่อยสร้างหน้าตา Pygame และออกแบบ Version ของตัวเอง
+
+| Chapter และเกม | ผลงานที่เด็กจะได้ | ภาพตัวอย่าง |
+|---|---|---|
+| **01 Basic — Adventure Profile Card** | รับชื่อ อายุ สัตว์ที่ชอบ และเลขนำโชค คำนวณข้อมูล แล้วเปลี่ยนผล `print()` เป็นการ์ดที่มีสี Shapes เส้น และข้อความ | <img src="./docs/images/game-previews/01-profile-card.png" width="300" alt="Adventure Profile Card"> |
+| **02 If–Elif–Else — Mystery Animal** | ใช้คำใบ้และ Conditions ทายสัตว์ จากนั้นเปลี่ยน `input()` เป็นปุ่มรูปภาพและ Mouse Event | <img src="./docs/images/game-previews/02-mystery-animal.png" width="300" alt="Mystery Animal Game"> |
+| **03 Lists — Treasure Backpack** | เลือกของ 3 ชิ้น จัดกระเป๋า พบเหตุการณ์ใหม่ เปลี่ยนของ และไปถึง Ending จากข้อมูลใน List | <img src="./docs/images/game-previews/03-treasure-backpack.png" width="300" alt="Treasure Backpack Game"> |
+| **04 Loops — Mystery Animal Loop** | ทายซ้ำหลายรอบ ใช้ Game Loop, FPS, Keyboard และ Animation โดยซ่อนรูปสัตว์จนกว่าจะเฉลย | <img src="./docs/images/game-previews/04-mystery-animal-loop.png" width="300" alt="Mystery Animal Loop Game"> |
+| **05 Tuples — Space Coordinates** | เก็บจุดหมายและพิกัดคงที่ใน Tuple เลือกตำแหน่งบนแผนที่ และตรวจภารกิจจาก `(x, y)` | <img src="./docs/images/game-previews/05-space-coordinates.png" width="300" alt="Space Coordinates Game"> |
+| **06 Sets — Rescue Team** | เลือกฮีโร่ต่างกัน 3 คนโดยไม่ซ้ำ รวม Skills และตรวจทักษะที่ภารกิจกู้ภัยต้องใช้ | <img src="./docs/images/game-previews/06-rescue-team.png" width="300" alt="Rescue Team Game"> |
+| **07 Dictionaries — Pet Rescue** | สร้าง Character Cards จาก Nested Dictionary เลือกสัตว์และของที่ต้องการ แล้วอัปเดตสถานะการช่วยเหลือ | <img src="./docs/images/game-previews/07-pet-rescue.png" width="300" alt="Pet Rescue Game"> |
+| **08 Functions — Dice Battle** | แยก Function ทอยลูกเต๋า กติกาต่อสู้ และ UI รักษาชื่อผู้เล่น จำนวนรอบ และคะแนนชนะ | <img src="./docs/images/game-previews/08-dice-battle.png" width="300" alt="Dice Battle Game"> |
+| **Milestone 1 — Category Hangman** | เลือกหมวดคำศัพท์ อ่าน Hint ทายตัวอักษร ดูรูป Hangman เพิ่มทีละส่วน และออกแบบหมวดของตัวเอง | <img src="./docs/images/game-previews/09-hangman.png" width="300" alt="Category Hangman Game"> |
+| **Milestone 2 — Tic-Tac-Toe** | สร้างกระดาน 3×3 ตรวจช่องซ้ำ Win/Draw เก็บ Score และออกแบบสัญลักษณ์หรือกติกาพิเศษ | <img src="./docs/images/game-previews/10-tic-tac-toe.png" width="300" alt="Tic-Tac-Toe Game"> |
+
+ไฟล์ `_1` คือเกมตัวอย่างสมบูรณ์ ส่วน `_2` เปิดพื้นที่ให้เด็กนำ Terminal Project
+ของตัวเองมา Convert และเพิ่ม Theme, Asset, Story และ Creative Game Rules
 
 Chapter 01–02 เก็บ Terminal Version ไว้ครบ แล้วเพิ่ม Pygame Version ต่อท้าย
 เพื่อให้ครูเปรียบเทียบ `print/input` กับ `render/event` ได้โดยตรง ส่วนภาพใน
